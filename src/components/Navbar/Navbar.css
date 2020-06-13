@@ -1,0 +1,12 @@
+#root .navbar-brand {
+    font-size: 45px;
+    padding: 0;
+    line-height: 0.5;
+    margin-right: 5vh;
+}
+
+
+.nav-link {
+    font-size: 25px;
+    line-height: 0.5;
+}

@@ -1,26 +1,43 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import  NavigationBar from './components/Navbar/Navbar';
+import CardContainer from './components/CardContainer/CardContainer';
+import LoginForm from './components/Form/Form';
+import ToggleContainer from './components/ToggleContainer/ToggleContainer';
+import ToDoList from './components/ToDoList/ToDoList';
+import FetchTest from './components/FetchTest/FetchTest';
+
+// Udemy 
+
+
+import RoboCardContainer from './Udemy/RoboFriends/RoboCardContainer';
+
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { faCannabis, faBars } from '@fortawesome/free-solid-svg-icons';
+
+import {BrowserRouter as Router, Route} from 'react-router-dom';
+
+
+library.add(fab, faCannabis, faBars);
+
+
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Router>
+      <Route path = '/' component = {NavigationBar}/>
+      <Route path = '/cards' exact component = {CardContainer}/>
+      <Route path = '/login' exact component = {LoginForm}/>
+      <Route path = '/classchanger' exact component = {ToggleContainer}/>
+      <Route path = '/todoList' exact component = {ToDoList}/>
+      <Route path = '/fetchcomponent' exact component =  {FetchTest}/> 
+      <Route path = '/udemy/robofriends' exact component = {RoboCardContainer}/>
+      </Router>
+    );
 }
 
 export default App;

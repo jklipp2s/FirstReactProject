@@ -1,0 +1,59 @@
+.formLayout {
+width: 52vh;
+min-height: max-content;
+min-width: max-content;
+padding: 60px 60px 30px 60px;
+position: absolute;
+background-color: rgba(229, 229, 229) ;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+border-radius: 4px;
+border: 0.1px black solid ;
+
+}
+
+.gridLayout {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-auto-rows: 20px 45px 20px 1fr 45px 1fr;
+    grid-auto-columns: 1fr 1fr;
+    align-items: center;
+   
+}
+
+
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: 20px;
+    letter-spacing: 1px;
+
+}
+
+
+
+
+
+.submitButton {
+ grid-row: 6;
+ width: 55%;
+ position: relative;
+ left: 50%;
+ transform: translate(-50%);
+ background-color: rgb(0, 116, 211);
+ color: white;
+ padding: 5px;
+ border-radius: 4px;
+}
+
+
+html {
+background: url("/images/background/greywall.jpg");
+min-height: 500px;
+}
+
+

@@ -1,0 +1,46 @@
+.CustomCard {
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+}
+
+
+.CustomCard:hover .img-wrap::after  {
+content: '';
+position: absolute;
+background: rgba(0,0,0,.4);
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+  
+}
+
+.h5 {
+    height: fit-content !important;
+}
+
+
+.CustomCard:hover .MiddleContent  {
+display: block;
+color: white;
+position: relative;
+text-align: center;
+top: -35%;
+left: -50%;
+
+z-index: 1000;
+
+}
+.MiddleContent{
+    display: none;
+    width: fit-content;
+}
+
+.CenterHorizontal {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+}
+
+

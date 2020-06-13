@@ -1,0 +1,63 @@
+.toDoItem {
+    margin-bottom: 10px;
+    display: grid;
+    grid-auto-columns: 17px minmax(0,275px);
+    border-bottom: 1px grey solid;
+    
+    
+}
+
+
+.todoList {
+    position: absolute;
+    width: fit-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(229, 229, 229);
+    padding: 35px 20px 25px 20px;
+    overflow: visible;
+}
+
+
+input[type="checkbox"] {
+    height: 100%;
+}
+
+
+.toDoText {
+grid-column: 2;   
+
+}
+
+
+input:checked ~ span {
+    text-decoration: line-through;
+    font-style: italic;
+    color: grey;
+}
+
+
+
+.todoHeader {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    color: gray;
+    
+}
+
+
+.winnWrapper {
+    position: absolute;
+    width: 500px;
+    padding: 20px 0 20px 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: greenyellow;
+    color: green;
+    font-size: 20px;
+    text-align: center;
+
+}
