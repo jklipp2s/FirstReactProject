@@ -1,9 +1,7 @@
 import React from 'react';
 
 
-function done () {
 
-}
 
 const Card =(props) => {
     
