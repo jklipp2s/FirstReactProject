@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import './ToDoList.css';
 
@@ -67,7 +67,6 @@ class ToDoList extends React.Component {
 
     checkDone(c){
         if(!c.includes(false) && !this.state.ok){ 
-          //  alert("Super! du hast alle aufgaben erledigt!!!");
         return(
             <div className = "winnWrapper">Du hast Alles erledigt gute Arbeit!!
             
@@ -83,7 +82,7 @@ class ToDoList extends React.Component {
 
     checkState(c) {
         const checkList = this.state.checkList.slice();
-        checkList[c] =  checkList[c] == false ? true : false;
+        checkList[c] =  checkList[c] === false ? true : false;
         this.setState({
             checkList : checkList
         });

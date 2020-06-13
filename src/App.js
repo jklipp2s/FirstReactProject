@@ -26,7 +26,11 @@ library.add(fab, faCannabis, faBars);
 
 
 
-function App() {
+class App extends React.Component {
+
+
+
+  render(){
   return (
     <Router>
       <Route path = '/' component = {NavigationBar}/>
@@ -38,6 +42,7 @@ function App() {
       <Route path = '/udemy/robofriends' exact component = {RoboCardContainer}/>
       </Router>
     );
+  }
 }
 
 export default App;

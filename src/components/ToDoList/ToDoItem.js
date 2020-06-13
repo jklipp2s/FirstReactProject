@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 
 
 function ToDoItem(props) {
 
-    let [content, setContent] = useState(props.children);
-
+   
 
 return(
     <div className="toDoItem">

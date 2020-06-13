@@ -2,11 +2,12 @@ import React from 'react';
 
 import './Navbar.css';
 
-import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class NavigationBar extends React.Component {
 
+  /*
     getNavitem(text) {
         return (
             <li className="nav-item">
@@ -14,7 +15,7 @@ class NavigationBar extends React.Component {
             </li>
         );
     }
-
+    */
 
     addNormalItem(link, text) {
         return (
@@ -54,7 +55,7 @@ class NavigationBar extends React.Component {
             
 
             <div>
-            {elements.map((item, i) =>  <NavDropdown.Item href={links[i]}> {item} </NavDropdown.Item>)}
+            {elements.map((item, i) =>  <NavDropdown.Item  key= {i} href={links[i]}> {item} </NavDropdown.Item>)}
             </div>
             
         );

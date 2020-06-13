@@ -3,7 +3,7 @@ import React from 'react';
 
 import './CardContainer.css';
 
-import { CardGroup, Card } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 
 class CustomCard extends React.Component {
     constructor(props){

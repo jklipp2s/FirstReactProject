@@ -16,7 +16,7 @@ function ToggleContainer() {
         <div className={classname}>
 
 
-        <button onClick={() => setClass(classname == "red" ? "green" : "red")}>Click me! ({classname})</button>
+        <button onClick={() => setClass(classname === "red" ? "green" : "red")}>Click me! ({classname})</button>
 
 
         </div>
